@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arogyarasa – Premium Healing Spices</title>
+  <meta name="description" content="Arogyarasa offers 100 % pure, ethically sourced spices inspired by Ayurvedic tradition. Discover turmeric, cinnamon, pepper, chili and more.">
+  <!-- Open Graph / Social -->
+  <meta property="og:title" content="Arogyarasa – Premium Healing Spices" />
+  <meta property="og:description" content="100 % pure, ethically sourced spices inspired by Ayurvedic tradition." />
+  <meta property="og:image" content="https://picsum.photos/seed/og-image/1200/630" />
+  <meta property="og:url" content="https://tapas100.github.io/arogyarasa-website/" />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="https://picsum.photos/seed/favicon/32/32" type="image/png">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: #556B2F,
+            secondary: #3B4D27,
+            accent: #D4A72C,
+            bg: #F5F1E9,
+          },
+          fontFamily: {
+            heading: ['"Merriweather"', 'serif'],
+            body: ['"Inter"', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+<style>
+  body {
+    background: linear-gradient(135deg, #F5E9D8 0%, #FFF2E0 100%);
+    background-attachment: fixed;
+  }
+</style>
+</head>
+<body class="bg-bg text-gray-800 font-body">
+  <!-- Header / Hero -->
+  <header class="relative bg-cover bg-center" style="background-image:url('https://picsum.photos/seed/spicehero/1600/900');">
+    <div class="bg-black/50 w-full h-full absolute inset-0"></div>
+    <div class="relative container mx-auto px-4 py-24 text-center text-white">
+      <h1 class="font-heading text-4xl md:text-5xl mb-2">Arogyarasa</h1>
+      <p class="text-lg md:text-xl mb-6">Nature’s Healing Spices</p>
+      <a href="#products" class="inline-block bg-accent text-black font-semibold py-2 px-6 rounded hover:opacity-90 transition">Shop Now</a>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="container mx-auto px-4 py-16">
+    <div class="grid md:grid-cols-2 gap-8 items-center">
+      <div>
+        <h2 class="font-heading text-3xl mb-4">Our Story</h2>
+        <p class="mb-4">Founded on the ancient wisdom of Ayurveda, Arogyarasa brings you ethically sourced, 100 % pure spice powders. No additives, no fillers – just the essence of the earth in every pinch.</p>
+        <p>Our spices are harvested at peak ripeness, sun‑dried, stone‑ground, and sealed to preserve aroma and nutrition.</p>
+      </div>
+      <div>
+        <img src="https://picsum.photos/seed/spiceabout/800/600" alt="Spice blend in a mortar" class="rounded shadow-lg">
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Products -->
+  <section id="products" class="bg-bg py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="font-heading text-3xl text-center mb-8">Featured Spices</h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Card Template -->
+        <article class="bg-white rounded shadow p-4 text-center">
+          <img src="https://picsum.photos/seed/turmeric/400/300" alt="Turmeric powder" class="w-full h-48 object-cover rounded">
+          <h3 class="font-heading text-xl mt-3">Turmeric Gold</h3>
+          <p class="text-sm text-gray-600 mt-2">Anti‑inflammatory, vibrant colour – perfect for curries and wellness drinks.</p>
+          <a href="#" class="inline-block mt-3 bg-accent text-black font-medium py-1 px-3 rounded hover:opacity-90">Learn More</a>
+        </article>
+        <article class="bg-white rounded shadow p-4 text-center">
+          <img src="https://picsum.photos/seed/cinnamon/400/300" alt="Cinnamon sticks" class="w-full h-48 object-cover rounded">
+          <h3 class="font-heading text-xl mt-3">Cinnamon Whisper</h3>
+          <p class="text-sm text-gray-600 mt-2">Sweet, aromatic, and heart‑healthy – ideal for desserts and teas.</p>
+          <a href="#" class="inline-block mt-3 bg-accent text-black font-medium py-1 px-3 rounded hover:opacity-90">Learn More</a>
+        </article>
+        <article class="bg-white rounded shadow p-4 text-center">
+          <img src="https://picsum.photos/seed/pepper/400/300" alt="Black pepper" class="w-full h-48 object-cover rounded">
+          <h3 class="font-heading text-xl mt-3">Black Pepper Zest</h3>
+          <p class="text-sm text-gray-600 mt-2">Robust pungency that elevates every savory dish.</p>
+          <a href="#" class="inline-block mt-3 bg-accent text-black font-medium py-1 px-3 rounded hover:opacity-90">Learn More</a>
+        </article>
+        <article class="bg-white rounded shadow p-4 text-center">
+          <img src="https://picsum.photos/seed/chili/400/300" alt="Red chili powder" class="w-full h-48 object-cover rounded">
+          <h3 class="font-heading text-xl mt-3">Chili Fire</h3>
+          <p class="text-sm text-gray-600 mt-2">Fiery heat with a smoky finish – for the bold palate.</p>
+          <a href="#" class="inline-block mt-3 bg-accent text-black font-medium py-1 px-3 rounded hover:opacity-90">Learn More</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process Flow -->
+  <section id="process" class="container mx-auto px-4 py-16">
+    <h2 class="font-heading text-3xl text-center mb-8">From Farm to Table</h2>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+      <div>
+        <img src="https://picsum.photos/seed/farm/120/120" alt="Organic farm" class="mx-auto mb-2">
+        <p>Organic Farm</p>
+      </div>
+      <div>
+        <img src="https://picsum.photos/seed/sun/120/120" alt="Sun drying" class="mx-auto mb-2">
+        <p>Sun‑Dry</p>
+      </div>
+      <div>
+        <img src="https://picsum.photos/seed/grind/120/120" alt="Stone grinding" class="mx-auto mb-2">
+        <p>Stone‑Grind</p>
+      </div>
+      <div>
+        <img src="https://picsum.photos/seed/seal/120/120" alt="Air‑tight seal" class="mx-auto mb-2">
+        <p>Air‑Tight Seal</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="bg-bg py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="font-heading text-3xl text-center mb-8">What Our Customers Say</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <blockquote class="border-l-4 border-primary pl-4 italic text-gray-700">
+          “My dishes never tasted this vibrant! Arogyarasa spices are a game‑changer.”<br>
+          — Priya K.
+        </blockquote>
+        <blockquote class="border-l-4 border-primary pl-4 italic text-gray-700">
+          “I love the purity – no additives, just pure flavor.”<br>
+          — Arjun S.
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section id="newsletter" class="bg-primary py-12">
+    <div class="container mx-auto px-4 text-center text-white">
+      <h2 class="font-heading text-2xl mb-4">Join the Spice Circle</h2>
+      <p class="mb-4">Get seasonal recipes, exclusive offers, and wellness tips.</p>
+      <form class="flex flex-col sm:flex-row justify-center items-center gap-2 max-w-xl mx-auto">
+        <input type="text" placeholder="Your name" required class="px-3 py-2 rounded text-gray-800 w-full sm:w-auto flex-1">
+        <input type="email" placeholder="Email address" required class="px-3 py-2 rounded text-gray-800 w-full sm:w-auto flex-1">
+        <button type="submit" class="bg-accent text-black font-medium py-2 px-4 rounded hover:opacity-90">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-400 py-6">
+    <div class="container mx-auto px-4 text-center">
+      <p>&copy; 2026 Arogyarasa. All rights reserved.</p>
+      <p class="mt-2">
+        <a href="#" class="hover:underline mx-1">Privacy</a>|
+        <a href="#" class="hover:underline mx-1">Terms</a>|
+        <a href="https://instagram.com/arogyarasa" target="_blank" class="hover:underline mx-1">Instagram</a>|
+        <a href="https://facebook.com/arogyarasa" target="_blank" class="hover:underline mx-1">Facebook</a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
