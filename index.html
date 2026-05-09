@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Arogyarasa – Premium Healing Spices</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+  <style>
+    :root {
+      --primary:#c75b12;
+      --secondary:#8b5e3c;
+      --accent:#e8c547;
+      --bg:#faf8f5;
+      --text:#333;
+      --font-heading:'Playfair Display',serif;
+      --font-body:'Open Sans',sans-serif;
+    }
+    *{box-sizing:border-box;margin:0;padding:0;}
+    body{font-family:var(--font-body);color:var(--text);background:var(--bg);}
+    a{color:inherit;text-decoration:none;}
+    img{max-width:100%;display:block;}
+    .container{width:90%;max-width:1200px;margin:auto;padding:2rem 0;}
+    .hero{background:url('https://picsum.photos/seed/spicehero/1600/900') center/cover no-repeat;color:#fff; text-align:center; padding:8rem 1rem; position:relative;}
+    .hero::after{content:"";position:absolute;inset:0;background:rgba(0,0,0,0.45);}
+    .hero-content{position:relative;z-index:1;}
+    h1{font-family:var(--font-heading);font-size:3rem;margin-bottom:.5rem;}
+    .btn{display:inline-block;margin-top:1rem;padding:.75rem 1.5rem;background:var(--accent);color:#000;font-weight:600;border-radius:4px;transition:opacity .2s;}
+    .btn:hover{opacity:.8;}
+    section{padding:4rem 0;}
+    .grid{display:grid;gap:2rem;}
+    .grid-2{grid-template-columns:repeat(auto-fit,minmax(280px,1fr));}
+    .card{background:#fff;padding:1.5rem;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,0.08);text-align:center;}
+    .card img{border-radius:6px;height:180px;object-fit:cover;}
+    .card h3{margin:1rem 0 .5rem;font-family:var(--font-heading);}
+    .card p{font-size:.9rem;color:#555;}
+    .newsletter{background:var(--primary);color:#fff;padding:2rem;border-radius:8px;}
+    .newsletter input{padding:.75rem;margin-right:.5rem;border:none;border-radius:4px;width:calc(50% - 1rem);}
+    .newsletter button{padding:.75rem 1.5rem;background:var(--accent);border:none;border-radius:4px;font-weight:600;}
+    footer{background:#222;color:#ccc;padding:2rem 0;text-align:center;}
+    footer a{margin:0 .5rem;color:#ccc;}
+    @media (max-width:640px){h1{font-size:2.2rem;}.hero{padding:5rem 1rem;}}
+  </style>
+</head>
+<body>
+  <section class="hero"><div class="hero-content container"><h1>Arogyarasa</h1><p style="font-size:1.2rem;">Nature’s Healing Spices</p><a href="#products" class="btn">Shop Now</a></div></section>
+  <section id="about" class="container"><div class="grid grid-2"><div><h2 style="font-family:var(--font-heading);margin-bottom:1rem;">Our Story</h2><p>Founded on the ancient wisdom of Ayurveda, Arogyarasa brings you ethically sourced, 100 % pure spice powders. No additives, no fillers – just the essence of the earth in every pinch.</p><p>Our spices are harvested at peak ripeness, sun‑dried, stone‑ground, and sealed to preserve aroma and nutrition.</p></div><div><img src="https://picsum.photos/seed/spiceabout/800/600" alt="Spice blend in a mortar"></div></div></section>
+  <section id="products" class="container"><h2 style="font-family:var(--font-heading);text-align:center;margin-bottom:2rem;">Featured Spices</h2><div class="grid grid-2"><div class="card"><img src="https://picsum.photos/seed/turmeric/400/300" alt="Turmeric powder"><h3>Turmeric Gold</h3><p>Anti‑inflammatory, vibrant colour – perfect for curries and wellness drinks.</p><a href="#" class="btn">Learn More</a></div><div class="card"><img src="https://picsum.photos/seed/cinnamon/400/300" alt="Cinnamon sticks"><h3>Cinnamon Whisper</h3><p>Sweet, aromatic, and heart‑healthy – ideal for desserts and teas.</p><a href="#" class="btn">Learn More</a></div><div class="card"><img src="https://picsum.photos/seed/pepper/400/300" alt="Black pepper"><h3>Black Pepper Zest</h3><p>Robust pungency that elevates every savory dish.</p><a href="#" class="btn">Learn More</a></div><div class="card"><img src="https://picsum.photos/seed/chili/400/300" alt="Red chili powder"><h3>Chili Fire</h3><p>Fiery heat with a smoky finish – for the bold palate.</p><a href="#" class="btn">Learn More</a></div></div></section>
+  <section id="process" class="container"><h2 style="font-family:var(--font-heading);text-align:center;margin-bottom:2rem;">From Farm to Table</h2><div class="grid grid-2" style="text-align:center;"><div><img src="https://picsum.photos/seed/farm/120/120" alt="Farm"><p>Organic Farm</p></div><div><img src="https://picsum.photos/seed/sun/120/120" alt="Sun drying"><p>Sun‑Dry</p></div><div><img src="https://picsum.photos/seed/grind/120/120" alt="Stone grinding"><p>Stone‑Grind</p></div><div><img src="https://picsum.photos/seed/seal/120/120" alt="Sealed jar"><p>Air‑Tight Seal</p></div></div></section>
+  <section id="testimonials" class="container"><h2 style="font-family:var(--font-heading);text-align:center;margin-bottom:2rem;">What Our Customers Say</h2><div class="grid grid-2"><blockquote style="font-style:italic;border-left:4px solid var(--primary);padding-left:1rem;color:#555;">“My dishes never tasted this vibrant! Arogyarasa spices are a game‑changer.”<br>— Priya K.</blockquote><blockquote style="font-style:italic;border-left:4px solid var(--primary);padding-left:1rem;color:#555;">“I love the purity – no additives, just pure flavor.”<br>— Arjun S.</blockquote></div></section>
+  <section id="newsletter" class="container"><div class="newsletter"><h2 style="font-family:var(--font-heading);margin-bottom:1rem;">Join the Spice Circle</h2><p>Get seasonal recipes, exclusive offers, and wellness tips.</p><form><input type="text" placeholder="Your name" required><input type="email" placeholder="Email address" required><button type="submit">Subscribe</button></form></div></section>
+  <footer><p>&copy; 2026 Arogyarasa. All rights reserved.</p><p><a href="#">Privacy</a> | <a href="#">Terms</a> | <a href="https://instagram.com/arogyarasa" target="_blank">Instagram</a> | <a href="https://facebook.com/arogyarasa" target="_blank">Facebook</a></p></footer>
+</body>
+</html>
