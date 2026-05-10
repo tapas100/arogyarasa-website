@@ -4,12 +4,15 @@ describe('Asset loading', () => {
     const assets = [
       'assets/farm.jpg',
       'assets/farm.svg',
-      'assets/sundry.jpg',
+      'assets/turmeric.jpg',
+      'assets/cinnamon.jpg',
+      'assets/pepper.jpg',
+      'assets/chili.jpg',
       'assets/grind.jpg',
-      'assets/heart.jpg',
       'assets/sun.svg',
       'assets/mortar.svg',
-      'assets/handheart.svg'
+      'assets/handheart.svg',
+      'assets/sundry.jpg'
     ];
     assets.forEach(src => {
       cy.get(`img[src="${src}"]`).should('be.visible');
