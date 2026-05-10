@@ -103,7 +103,7 @@
     <h2 class="font-heading text-3xl text-center mb-8">From Farm to Table</h2>
     <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
       <div>
-        <div class="flex flex-col items-center"><img src="https://images.unsplash.com/photo-1501004318641-b39e6c2c841b?auto=format&fit=crop&w=800&q=80" alt="Organic farm" class="mx-auto mb-2 max-w-full h-auto rounded"><div class="flex items-center gap-2"><img src="https://www.svgrepo.com/download/381702/farm.svg" alt="Farm icon" class="w-5 h-5"/><span>Organic Farm</span></div></div>
+        <div class="flex flex-col items-center"><img src="assets/farm.jpg" alt="Organic farm" class="mx-auto mb-2 max-w-full h-auto rounded"><div class="flex items-center gap-2"><img src="assets/farm.svg" alt="Farm icon" class="w-5 h-5"/><span>Organic Farm</span></div></div>
         
       </div>
       <div>
@@ -163,5 +163,20 @@
       </p>
     </div>
   </footer>
+<style>
+    .theme-morning { background: linear-gradient(135deg, #FFFBEB, #FFEFD5); color: #222; }
+    .theme-day { background: linear-gradient(135deg, #E0F7FA, #80DEEA); color: #000; }
+    .theme-night { background: #121212; color: #EEE; }
+  </style>
+  <script>
+    (function(){
+      const hour = new Date().getHours();
+      let theme = 'night';
+      if (hour >=5 && hour <9) theme = 'morning';
+      else if (hour >=9 && hour <18) theme = 'day';
+      else theme = 'night';
+      document.body.classList.add('theme-'+theme);
+    })();
+  </script>
 </body>
 </html>
