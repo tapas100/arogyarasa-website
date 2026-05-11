@@ -1,0 +1,20 @@
+name: Visual Hierarchy Check
+on: [push, pull_request]
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install dependencies
+        run: pip install beautifulsoup4
+      - name: Run hierarchy analysis
+        run: python scripts/visual_hierarchy.py frontend/src/app/page.tsx > hierarchy.json
+      - name: Upload result
+        uses: actions/upload-artifact@v4
+        with:
+          name: hierarchy-report
+          path: hierarchy.json
