@@ -1,0 +1,13 @@
+{
+  "ci": {
+    "collect": {
+      "url": ["http://localhost:3000"],
+      "startServerCommand": "npm run dev",
+      "numberOfRuns": 1
+    },
+    "assert": {
+      "preset": "lighthouse:recommended",
+      "performance": 80
+    }
+  }
+}
